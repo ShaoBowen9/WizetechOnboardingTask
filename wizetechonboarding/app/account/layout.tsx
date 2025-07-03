@@ -16,6 +16,10 @@ export default function ProtectedLayout({
         <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
           <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
             <div className="flex gap-5 items-center font-semibold">
+              <Link href="/" className="flex items-center justify-center">
+                <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l2.25-6.75m0 0L12 3l5.25 9.75m-10.5 0h10.5m-10.5 0L12 21l5.25-8.25" /></svg>
+                <span className="ml-2 text-xl font-bold">StartupJobs</span>
+              </Link>
               <Link href="/dashboard" className="text-sm font-medium hover:underline underline-offset-4">
                 Dashboard
               </Link>

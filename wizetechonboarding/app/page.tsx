@@ -17,13 +17,13 @@ export default function LandingPage() {
           <span className="ml-2 text-xl font-bold">StartupJobs</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#jobs" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/dashboard" className="text-sm font-medium hover:underline underline-offset-4">
             Find Jobs
           </Link>
           <Link href="#employers" className="text-sm font-medium hover:underline underline-offset-4">
             For Employers
           </Link>
-          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4">
             About
           </Link>
           <AuthButton />
@@ -337,19 +337,23 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="secondary" className="h-12 px-8">
-                  <Briefcase className="w-4 h-4 mr-2" />
-                  Find Jobs
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="h-12 px-8 bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
-                >
-                  <Users className="w-4 h-4 mr-2" />
-                  Post a Job
-                </Button>
+                <Link href="/dashboard">
+                  <Button size="lg" variant="secondary" className="h-12 px-8">
+                    <Briefcase className="w-4 h-4 mr-2" />
+                    Find Jobs
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
+                <Link href="/account">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="h-12 px-8 bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                  >
+                    <Users className="w-4 h-4 mr-2" />
+                    Post a Job
+                  </Button>
+                </Link>
               </div>
               <p className="text-sm text-primary-foreground/60">Free to join • No spam • Cancel anytime</p>
             </div>
@@ -365,13 +369,16 @@ export default function LandingPage() {
         </div>
         <p className="text-xs text-muted-foreground sm:ml-4">© 2024 StartupJobs. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link href="/dashboard" className="text-xs hover:underline underline-offset-4">
+            Find Jobs
+          </Link>
           <Link href="#" className="text-xs hover:underline underline-offset-4">
             Privacy Policy
           </Link>
           <Link href="#" className="text-xs hover:underline underline-offset-4">
             Terms of Service
           </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4">
+          <Link href="/about" className="text-xs hover:underline underline-offset-4">
             Contact
           </Link>
           <Link href="#" className="text-xs hover:underline underline-offset-4">
